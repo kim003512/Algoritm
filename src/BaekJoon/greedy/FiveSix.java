@@ -19,6 +19,5 @@ public class FiveSix {
         b = b.replace('5', '6');
 
         System.out.print(Integer.parseInt(a) + Integer.parseInt(b));
-
     }
 }
