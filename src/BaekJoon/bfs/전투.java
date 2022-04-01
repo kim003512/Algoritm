@@ -13,7 +13,7 @@ public class 전투 {
     static boolean[][] visited;
     static int[] dx = {-1, 1, 0, 0}; //상하좌우 이동
     static int[] dy = {0, 0, -1, 1};
-    static int black_pw, white_pw;
+    static int black_pw=0, white_pw=0;
     static class Node{
             int x;
             int y;
@@ -56,6 +56,7 @@ public class 전투 {
             }
         }
 
+        br.close();
         System.out.println(white_pw + " " + black_pw);
     }
 
