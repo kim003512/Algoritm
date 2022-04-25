@@ -25,13 +25,13 @@ public class 가장_긴_증가하는_부분_수열 {
             dp[i] = 1;
 
             for(int j=0; j<i; j++){
-//                System.out.println("i=" + i + " ,j="+j);
-//                System.out.println(seq[j] + " " + seq[i]);
-//                System.out.println(dp[i] + " " + dp[j]);
-
+                // dp[i] <= dp[j]를 만족해야하는 이유.
+                // 만약, arr = {10, 10, 30}에 경우
+                // 이때, dp 조건을 추가하지 않으면, 단순히 arr만 비교를 하게 되어
+                // dp[3] = 3이 되어 버린다.
+                // 따라서 초기화를 하면서 dp끼리 비교를하여 중복하여 증가하는 일을 막아야 한다.
                 if(seq[j]<seq[i] && dp[i] <= dp[j]){
                     dp[i] = dp[j] + 1;
-                    //System.out.println(dp[i]);
                 }
             }
         }
