@@ -1,4 +1,4 @@
-package SW_Expert_Academy;
+package SW_Expert_Academy.diffi1;
 
 import java.io.BufferedReader;
 import java.io.IOException;
