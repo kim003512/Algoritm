@@ -34,7 +34,6 @@ public class 상근이의_여행 {
                 plane[country1][country2] = plane[country2][country1] = 1;
             }
 
-            //System.out.println(dfs(1));
             bfs(1);
 
             System.out.println(plane_cnt-1);
@@ -54,7 +53,6 @@ public class 상근이의_여행 {
                 if(plane[nowX][i]!=0 && !visited[i]){
                     visited[i] = true;
                     queue.add(i);
-
                 }
             }
         }
