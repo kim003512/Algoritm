@@ -17,7 +17,7 @@ public class 일요일_13229 {
             int n=0;
 
             if(day.equals("SUN"))
-                n=7;
+                n   =7;
             else
                 n = 6-Arrays.asList(days).indexOf(day);
 
